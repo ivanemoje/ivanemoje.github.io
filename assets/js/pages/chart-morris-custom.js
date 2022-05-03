@@ -50,31 +50,37 @@ $(document).ready(function() {
     Morris.Bar({
         element: 'morris-bar-stacked-chart',
         data: [{
-                y: '2008',
+                y: 'S1',
                 a: 50,
                 b: 40,
                 c: 35,
             },
             {
-                y: '2009',
+                y: 'S2',
                 a: 75,
                 b: 65,
                 c: 60,
             },
             {
-                y: '2010',
+                y: 'S3',
                 a: 50,
                 b: 40,
                 c: 55,
             },
             {
-                y: '2011',
+                y: 'S4',
                 a: 75,
                 b: 65,
                 c: 85,
             },
             {
-                y: '2012',
+                y: 'S5',
+                a: 100,
+                b: 90,
+                c: 40,
+            },
+            {
+                y: 'S6',
                 a: 100,
                 b: 90,
                 c: 40,
@@ -87,7 +93,7 @@ $(document).ready(function() {
         resize: true,
         responsive:true,
         ykeys: ['a', 'b', 'c'],
-        labels: ['Bar 1', 'Bar 2', 'Bar 3'],
+        labels: ['Paid', 'Partially paid', 'Unpaid'],
         barColors: ["0-#1de9b6-#1dc4e9", "0-#899FD4-#A389D4", "#04a9f5"]
     });
     // [ bar-stacked ] chart end
@@ -133,7 +139,7 @@ $(document).ready(function() {
         ],
         xkey: 'y',
         ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
+        labels: ['Boys', 'Girls'],
         pointSize: 0,
         fillOpacity: 0.8,
         pointStrokeColors: ['#b4becb', '#A389D4'],
@@ -190,7 +196,7 @@ $(document).ready(function() {
         lineColors: ['#A389D4', '#1de9b6', '#04a9f5'],
         xkey: 'period',
         ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['Site A', 'Site B', 'Site C'],
+        labels: ['Paid', 'Partially paid', 'Unpaid'],
         pointSize: 0,
         lineWidth: 0,
         resize: true,
@@ -208,55 +214,48 @@ $(document).ready(function() {
         data: [{
                 y: '2006',
                 a: 20,
-                b: 10,
-                c: 35
+                b: 10
             },
             {
                 y: '2007',
                 a: 55,
-                b: 45,
-                c: 35
+                b: 45
             },
             {
                 y: '2008',
                 a: 45,
-                b: 35,
-                c: 35
+                b: 35
             },
             {
                 y: '2009',
                 a: 75,
-                b: 65,
-                c: 35
+                b: 65
             },
             {
                 y: '2010',
                 a: 50,
-                b: 40,
-                c: 35
+                b: 40
             },
             {
                 y: '2011',
                 a: 75,
-                b: 65,
-                c: 35
+                b: 65
             },
             {
                 y: '2012',
                 a: 100,
-                b: 90,
-                c: 35
+                b: 90
             }
         ],
         xkey: 'y',
         redraw: true,
         resize: true,
         smooth: false,
-        ykeys: ['a', 'b', 'c'],
+        ykeys: ['a', 'b'],
         hideHover: 'auto',
         responsive:true,
-        labels: ['Senior Six', 'Series B', 'Series C'],
-        lineColors: ['#1de9b6', '#04a9f5','04a9f5']
+        labels: ['Senior Six', 'Senior Five'],
+        lineColors: ['#1de9b6', '#04a9f5']
     });
     // [ line-angle-chart ] end
     // [ line-smooth-chart ] start
@@ -304,7 +303,7 @@ $(document).ready(function() {
         ykeys: ['a', 'b'],
         hideHover: 'auto',
         responsive:true,
-        labels: ['Series A', 'Series B'],
+        labels: ['Present', 'Absent'],
         lineColors: ['#1de9b6', '#A389D4']
     });
     // [ line-smooth-chart ] end
@@ -314,19 +313,19 @@ $(document).ready(function() {
         element: 'morris-donut-chart',
         data: [{
                 value: 60,
-                label: 'Data 1'
+                label: 'History'
             },
             {
                 value: 20,
-                label: 'Data 1'
+                label: 'English'
             },
             {
                 value: 10,
-                label: 'Data 1'
+                label: 'Commerce'
             },
             {
-                value: 5,
-                label: 'Data 1'
+                value: 10,
+                label: 'Mathematics'
             }
         ],
         colors: [
@@ -337,7 +336,7 @@ $(document).ready(function() {
         ],
         resize: true,
         formatter: function(x) {
-            return "val : " + x
+            return x
         }
     });    
     // [ Donut-chart ] end
