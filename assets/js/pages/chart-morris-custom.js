@@ -6,18 +6,18 @@ $(document).ready(function() {
         element: 'morris-bar-chart',
         data: [{
                 y: 'S1',
-                a: 50,
-                b: 40
+                a: 90,
+                b: 87
             },
             {
                 y: 'S2',
                 a: 75,
-                b: 65
+                b: 85
             },
             {
                 y: 'S3',
                 a: 50,
-                b: 40
+                b: 60
             },
             {
                 y: 'S4',
@@ -27,7 +27,7 @@ $(document).ready(function() {
             {
                 y: 'S5',
                 a: 100,
-                b: 90
+                b: 94
             },
             {
                 y: 'S6',
@@ -40,8 +40,8 @@ $(document).ready(function() {
         barGap: 3,
         resize: true,
         responsive:true,
-        ykeys: ['a', 'b', 'c'],
-        labels: ['Bar 1', 'Bar 2', 'Bar 3'],
+        ykeys: ['a', 'b'],
+        labels: ['Boys', 'Girls'],
         barColors: ["0-#1de9b6-#1dc4e9", "0-#899FD4-#A389D4", "#04a9f5"]
     });
     // [ bar-simple ] chart end
