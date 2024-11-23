@@ -49,4 +49,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Thanks to the open-source community for providing valuable resources and inspiration for building responsive web designs.
 
 ## Check DNS propagation
-dig WWW.Ivan Emoje.com +nostats +nocomments +nocmd
+dig www.ivanemoje.com +nostats +nocomments +nocmd
