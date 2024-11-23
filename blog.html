@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ivan Emoje</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html" style="font-weight: bold;">Ivan EMOJE</a>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="blog.html">Blog</a>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Blog</h1>
+
+        <!-- Art Section -->
+        <section class="section" id="art">
+            <h2>Art</h2>
+            <div class="post">
+                <h3>Exploring the Beauty of Nature Through Art</h3>
+                <p>Art has the power to capture the essence of nature.</p>
+                <a href="#">Coming soon</a>
+            </div>
+            <div class="post">
+                <h3>Do not let perfect get in the way of good</h3>
+                <p>How the chase of the perfect situation can more often not, do more harm than good</p>
+                <a href="#">Coming soon</a>
+            </div>
+        </section>
+
+        <!-- Engineering Section -->
+        <section class="section" id="engineering">
+            <h2>Data Engineering</h2>
+            <div class="post">
+                <h3>Docker and Postgres</h3>
+                <p>Create PostGres in Docker container</p>
+                <a href="pages/engineering/postgres-docker.html">Read more</a>
+            </div>
+            <div class="post">
+                <h3>OAuth</h3>
+                <p>Unpack basic authentication.</p>
+                <a href="pages/engineering/authentication.html">Read more</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to External JS -->
+    <script src="assets/js/theme-toggle.js"></script>
+</body>
+</html>
