@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Emoje</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            padding: 60px 80px;
+            line-height: 1.6;
+        }
+        
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            border: 3px solid #333;
+        }
+        
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: #a0a0a0;
+            margin-bottom: 35px;
+        }
+        
+        .info-row {
+            display: flex;
+            gap: 40px;
+            font-size: 1.1rem;
+            color: #d0d0d0;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, #333 0%, #333 100%);
+            margin: 40px 0;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        
+        .cta-text {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin-bottom: 35px;
+        }
+        
+        .contact-links {
+            display: flex;
+            gap: 50px;
+            font-size: 1.15rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #e0e0e0;
+            text-decoration: none;
+        }
+        
+        .contact-item:hover {
+            color: #ffffff;
+        }
+        
+        .icon {
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/dms/image/v2/C4D03AQHcWtkKYsrtkQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1639132807248?e=1769644800&v=beta&t=GUT9B0jfJ_Tx24LQDSNrSGGgDsFR5o-TX1VFoVRdZfk" alt="Profile" class="profile-pic">
+    
+    <h1>Hi. I'm Ivan Emoje</h1>
+    
+    <p class="subtitle">I'm a software engineer and entrepreneur with focus on distributed systems, AI and startups</p>
+    
+    <div class="info-row">
+        <div class="info-item">
+            <span>Munich, Germany</span>
+        </div>
+        <div class="info-item">
+            <span>8+ years of experience</span>
+        </div>
+        <div class="info-item">
+            <span>Full remote</span>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <h2>Let's connect</h2>
+    
+    <p class="cta-text">Reach me on LinkedIn or write an email.</p>
+    
+    <div class="contact-links">
+        <a href="mailto:emoje@ivanemoje.com" class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="dark:text-gray-400 text-gray-600">
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span>emoje@ivanemoje.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ivan-emoje/" class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="dark:text-gray-400 text-gray-600">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span>ivanemoje  </span>
+        </a>
+        <a href="https://github.com/ivanemoje" class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="dark:text-gray-400 text-gray-600">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <span>@ivanemoje</span>
+        </a>
+        <!-- <a href="#" class="contact-item">
+            <span class="icon">💼</span>
+            <span>CV</span>
+        </a> -->
+    </div>
+</body>
+</html>
